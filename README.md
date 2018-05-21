@@ -2,6 +2,7 @@ ActionScript 3 WebSocket Client
 ===============================
 
 *This is an AS3 implementation of a client library of the WebSocket protocol, as specified in the RFC6455 standard.*
+这是一个符合rfc6455标准中规定的AS3的Websocket协议客户端库。
 
 Explanation
 -----------
@@ -25,15 +26,18 @@ This library is released under the Apache License, Version 2.0.
 Download
 --------
 - The Adobe Air test application and the client library in SWC format are both available under the "Downloads" section above.
-
+- Adobe Air 测试应用和 SWC格式的客户端库在“Downloads”区之上都是可以下载的。
 
 Features
 --------
 - Based on the RFC6455 standard WebSocket protocol
+- 基于RFC6455标准 WebSocket协议
 - wss:// TLS support w/ hurlant as3crypto library
   - Learn more here: [as3crypto on Google Code](http://code.google.com/p/as3crypto/)
 - Can send and receive fragmented messages
+- 可以发送和接受片段的消息
 - Test Adobe Air app implements two of the subprotocols supported by Andy Green's libwebsockets-test-server:
+- Adobe Air 测试APP 实现了两个由Andy Green的libwebsockets-test-server支持的子协议：
   - *dumb-increment-protocol* (simple streaming incrementing numbers)
   - *lws-mirror-protocol* (shared drawing canvas)
   - Added *fraggle-protocol* to the list, but I'm having difficulty testing as there seems to be a problem with the libwebsockets-test-fraggle server (its own client complains of corrupt data intermittently when I run it on my machine)
@@ -42,7 +46,9 @@ Features
 Known Issues:
 -------------
 - There is no user-provided extension API implemented
+- 没有用户提供的扩展API实现。
 - Only the libwebsocket-test-server subprotocols mentioned have been tested so far
+- 迄今为止只有 libwebsocket-test-server 子协议提到了被测试过
 
 
 Usage Example
